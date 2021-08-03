@@ -58,7 +58,7 @@
                 top: 0;
                 opacity: 0.75;
             }
-            .projects__btn {
+            .projects__btn,p {
                 opacity: 1;
             }
         }
@@ -76,7 +76,7 @@
         text-align: center;
     }
 
-    &__btn {
+    &__btn, p{
         opacity: 0;
         color: set-text-color($secondary-color);
         @include transition-ease;
@@ -84,6 +84,14 @@
         &:hover {
             color: set-text-color(set-text-color($secondary-color));
         }
+    }
+    p{
+        position: absolute;
+        bottom: 1%;
+        left: 5%;
+        font-size: 20px;
+        text-align: center;
+        color: aliceblue;
     }
 
     .social-icons{

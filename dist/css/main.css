@@ -221,6 +221,33 @@
 .about .jobs__job h6 {
   margin: 0.3rem 0;
 }
+.about .jobs__job div {
+  width: 100%;
+  margin: auto;
+}
+.about .jobs__job div div {
+  justify-self: center;
+  width: 25%;
+  margin: 2em;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.about .jobs__job div div img {
+  width: 70%;
+}
+.about .jobs__job div div p {
+  width: 70%;
+  font-size: 16px;
+  text-align: center;
+}
 .about .social-icons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -294,7 +321,7 @@
   top: 0;
   opacity: 0.75;
 }
-.projects__item:hover .projects__btn {
+.projects__item:hover .projects__btn, .projects__item:hover p {
   opacity: 1;
 }
 .projects__btns {
@@ -310,14 +337,22 @@
           align-items: center;
   text-align: center;
 }
-.projects__btn {
+.projects__btn, .projects p {
   opacity: 0;
   color: #000;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
-.projects__btn:hover {
+.projects__btn:hover, .projects p:hover {
   color: #fff;
+}
+.projects p {
+  position: absolute;
+  bottom: 1%;
+  left: 5%;
+  font-size: 20px;
+  text-align: center;
+  color: aliceblue;
 }
 .projects .social-icons {
   display: -webkit-box;
