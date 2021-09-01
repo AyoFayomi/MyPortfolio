@@ -162,7 +162,7 @@
   padding-bottom: 1rem;
 }
 .about .jobs {
-  width: 50vw;
+  width: 70vw;
   margin: 2rem auto 0 auto;
   display: grid;
   grid-template-columns: 1fr;
@@ -196,12 +196,6 @@
   margin: 2em auto;
   display: flex;
   flex-direction: column;
-}
-.about .jobs__job div progress {
-  background-color: red;
-  border: 0;
-  height: 18px;
-  border-radius: 9px;
 }
 .about .jobs__job div progress[value] {
   width: 50%;
