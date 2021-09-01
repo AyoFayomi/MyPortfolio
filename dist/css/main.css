@@ -1,6 +1,5 @@
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -9,11 +8,8 @@
   height: 100%;
   padding-top: 40vh;
   overflow: hidden;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   text-align: center;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0.3))), url(../img/model-1.jpg) center top;
   background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url(../img/model-1.jpg) center top;
   background-size: cover;
 }
@@ -36,7 +32,6 @@
   height: 20px;
   width: 28px;
   cursor: pointer;
-  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 .menu-btn__burger {
@@ -46,7 +41,6 @@
   width: 28px;
   height: 3px;
   background: #fff;
-  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 .menu-btn__burger::before {
@@ -56,7 +50,6 @@
   width: 28px;
   height: 3px;
   background: #fff;
-  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 .menu-btn__burger::after {
@@ -66,22 +59,18 @@
   width: 20px;
   height: 3px;
   background: #fff;
-  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 .menu-btn__burger.open {
-  -webkit-transform: rotate(720deg);
-          transform: rotate(720deg);
+  transform: rotate(720deg);
   background: transparent;
 }
 .menu-btn__burger.open::before {
-  -webkit-transform: rotate(45deg) translate(5px, 8px);
-          transform: rotate(45deg) translate(5px, 8px);
+  transform: rotate(45deg) translate(5px, 8px);
 }
 .menu-btn__burger.open::after {
   width: 28px;
-  -webkit-transform: rotate(-45deg) translate(3px, -7px);
-          transform: rotate(-45deg) translate(3px, -7px);
+  transform: rotate(-45deg) translate(3px, -7px);
 }
 
 .nav {
@@ -96,42 +85,27 @@
   visibility: visible;
 }
 .nav .menu-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
   height: 100vh;
   overflow: hidden;
   background: #272727;
   list-style-type: none;
   padding-right: 1rem;
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
-  -webkit-transition: all 0.5s ease-in-out;
+  transform: translateY(-100%);
   transition: all 0.5s ease-in-out;
 }
 .nav .menu-nav.open {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
+  transform: translateY(0);
 }
 .nav .menu-nav__item {
-  -webkit-transform: translateX(100vw);
-          transform: translateX(100vw);
-  -webkit-transition: all 0.5s ease-in-out;
+  transform: translateX(100vw);
   transition: all 0.5s ease-in-out;
 }
 .nav .menu-nav__item.open {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
+  transform: translateX(0);
 }
 .nav .menu-nav__item.active > a {
   color: #ff652f;
@@ -142,7 +116,6 @@
   text-transform: uppercase;
   padding: 2rem 0;
   font-weight: 300;
-  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 .nav .menu-nav__link:hover {
@@ -150,23 +123,19 @@
 }
 
 .menu-nav__item:nth-child(1) {
-  -webkit-transition-delay: 0.25s;
-          transition-delay: 0.25s;
+  transition-delay: 0.25s;
 }
 
 .menu-nav__item:nth-child(2) {
-  -webkit-transition-delay: 0.35s;
-          transition-delay: 0.35s;
+  transition-delay: 0.35s;
 }
 
 .menu-nav__item:nth-child(3) {
-  -webkit-transition-delay: 0.45s;
-          transition-delay: 0.45s;
+  transition-delay: 0.45s;
 }
 
 .menu-nav__item:nth-child(4) {
-  -webkit-transition-delay: 0.55s;
-          transition-delay: 0.55s;
+  transition-delay: 0.55s;
 }
 
 .about {
@@ -175,22 +144,12 @@
 .about__bio-image {
   height: 40vh;
   width: 100%;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0.4))), url(../img/project-4.jpg) center top;
   background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.4)), url(../img/project-4.jpg) center top;
   background-size: cover;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
 }
 .about__bio-image p {
   margin-bottom: 2rem;
@@ -223,43 +182,39 @@
 }
 .about .jobs__job div {
   width: 100%;
-  margin: auto;
 }
-.about .jobs__job div div {
-  justify-self: center;
-  width: 25%;
-  margin: 2em;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-.about .jobs__job div div img {
-  width: 70%;
-}
-.about .jobs__job div div p {
-  width: 70%;
+.about .jobs__job div p {
+  width: 50%;
   font-size: 16px;
   text-align: center;
 }
-.about .social-icons {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.about .jobs__job div ul {
+  width: 100%;
+}
+.about .jobs__job div ul li {
+  list-style: none;
+  margin: 2em auto;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
+}
+.about .jobs__job div progress {
+  background-color: red;
+  border: 0;
+  height: 18px;
+  border-radius: 9px;
+}
+.about .jobs__job div progress[value] {
+  width: 50%;
+  height: 1.2em;
+  margin-top: 1em;
+  margin-left: 0.5em;
+}
+.about .social-icons {
+  display: flex;
+  flex-direction: column;
 }
 .about footer {
-  -webkit-transform: rotate(90deg) translate(-3rem, -5rem);
-          transform: rotate(90deg) translate(-3rem, -5rem);
+  transform: rotate(90deg) translate(-3rem, -5rem);
 }
 
 .projects {
@@ -268,22 +223,12 @@
 .projects__bio-image {
   height: 30vh;
   width: 100%;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0.3))), url(../img/jefferson-santos-9SoCnyQmkzI-unsplash.jpg) center top;
   background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url(../img/jefferson-santos-9SoCnyQmkzI-unsplash.jpg) center top;
   background-size: cover;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
 }
 .projects__bio-image .text-secondary {
   font-size: 2rem;
@@ -314,7 +259,6 @@
   width: 100%;
   background: #ff652f;
   opacity: 0;
-  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 .projects__item:hover::after {
@@ -332,15 +276,12 @@
   z-index: 1;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   text-align: center;
 }
 .projects__btn, .projects p {
   opacity: 0;
   color: #000;
-  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 .projects__btn:hover, .projects p:hover {
@@ -355,34 +296,20 @@
   color: aliceblue;
 }
 .projects .social-icons {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 .projects footer {
-  -webkit-transform: rotate(90deg) translate(-3rem, -5rem);
-          transform: rotate(90deg) translate(-3rem, -5rem);
+  transform: rotate(90deg) translate(-3rem, -5rem);
 }
 
 .contact {
   height: 100%;
   padding-top: 40vh;
   overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0.3))), url(../img/model-1.jpg) center top;
+  flex-direction: column;
+  align-items: center;
   background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url(../img/model-1.jpg) center top;
   background-size: cover;
 }
@@ -411,8 +338,7 @@
   }
   .nav .menu-nav {
     display: block;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
     height: 100%;
     background: transparent;
     text-align: right;
@@ -496,7 +422,6 @@ main .social-icons {
 }
 main .social-icons a {
   padding: 0.4rem;
-  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 main .social-icons a:hover {
